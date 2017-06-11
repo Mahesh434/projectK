@@ -1,0 +1,26 @@
+.pk-slider {
+  width:100%;
+  height:20px;
+  margin:0 auto 1em;
+  position:relative;
+  cursor:pointer;
+}
+.pk-slider:before {
+  content:"";
+  display:block;
+  position:absolute;
+  top:9px;
+  left:0;
+  width:100%;
+  height:2px;
+  background-color:gray;
+}
+.pk-slider span {
+  display:block;
+  height:inherit;
+  position:relative;
+  z-index:2;
+  background-color:cyan;
+  cursor:pointer;
+  border-radius: 50px;
+}

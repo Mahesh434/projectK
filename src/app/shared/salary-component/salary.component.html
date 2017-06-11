@@ -1,0 +1,8 @@
+<div class="form-group salary-block">
+    <label for="ur-salary">Salary:</label>
+    <pk-slider (sliderChanged)="sliderChanged($event)" 
+               [maxValue]="4000000"
+               [sliderID]="'pk-salary-slider'">
+    </pk-slider>
+    <input class="form-control" id="ur-salary" name="ur-salary" value="{{salary}}" disabled>
+</div>

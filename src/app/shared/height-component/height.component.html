@@ -1,0 +1,19 @@
+<div class="form-group height-block">
+    <label for="ur-height">Height:</label>
+
+    <!--Toggle Code-->
+    <pk-toggle [(isToggleChecked)]="displayHeightInCM"
+               (toggleChanged)="displayHeightInCM = !displayHeightInCM"></pk-toggle>
+    <label *ngIf="displayHeightInCM">(Centimeters)</label>
+    <label *ngIf="!displayHeightInCM">(Feet)</label>
+
+    <!--Slider Code-->
+    <pk-slider (sliderChanged)="sliderChanged($event)"
+               [maxValue]= "240"
+               [sliderID]="'pk-height-slider'">
+    </pk-slider>
+
+    <!--Input Box-->
+    <input class="form-control height-input" id="ur-height" name="ur-height" value="{{heightInCM}}" disabled *ngIf="displayHeightInCM">
+    <input class="form-control height-input" id="ur-height" name="ur-height" value="{{heightInFtInch}}" disabled *ngIf="!displayHeightInCM">
+</div>

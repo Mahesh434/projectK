@@ -1,0 +1,276 @@
+{
+  "RASI": [
+    {
+      "key": "Aries",
+      "value": "1"
+    },
+    {
+      "key": "Taurus",
+      "value": "2"
+    },
+    {
+      "key": "Gemini",
+      "value": "3"
+    },
+    {
+      "key": "Cancer",
+      "value": "4"
+    },
+    {
+      "key": "Leo",
+      "value": "5"
+    },
+    {
+      "key": "Virgo",
+      "value": "6"
+    },
+    {
+      "key": "Libra",
+      "value": "7"
+    },
+    {
+      "key": "Scorpio",
+      "value": "8"
+    },
+    {
+      "key": "Sagittarius",
+      "value": "9"
+    },
+    {
+      "key": "Capricorn",
+      "value": "10"
+    },
+    {
+      "key": "Aquarius",
+      "value": "11"
+    },
+    {
+      "key": "Pisces",
+      "value": "12"
+    }
+  ],
+  "STAR": [
+    {
+      "key": "Aswini",
+      "value": "1"
+    },
+    {
+      "key": "Bharani",
+      "value": "2"
+    },
+    {
+      "key": "Kruthiga",
+      "value": "3"
+    },
+    {
+      "key": "Rohini",
+      "value": "4"
+    },
+    {
+      "key": "Mrigasira",
+      "value": "5"
+    },
+    {
+      "key": "Arudra",
+      "value": "6"
+    },
+    {
+      "key": "Punarvasu",
+      "value": "7"
+    },
+    {
+      "key": "Pushya",
+      "value": "8"
+    },
+    {
+      "key": "Asilesha",
+      "value": "9"
+    },
+    {
+      "key": "Makha",
+      "value": "10"
+    },
+    {
+      "key": "Poorvaphalguni",
+      "value": "11"
+    },
+    {
+      "key": "Uthiraphalgunu",
+      "value": "12"
+    },
+    {
+      "key": "Hastha",
+      "value": "13"
+    },
+    {
+      "key": "Chitha",
+      "value": "14"
+    },
+    {
+      "key": "Swathi",
+      "value": "15"
+    },
+    {
+      "key": "Visaka",
+      "value": "16"
+    },
+    {
+      "key": "Anuradha",
+      "value": "17"
+    },
+    {
+      "key": "Jyeshta",
+      "value": "18"
+    },
+    {
+      "key": "Poorvashada",
+      "value": "20"
+    },
+    {
+      "key": "Uthrashada",
+      "value": "21"
+    },
+    {
+      "key": "Sravana",
+      "value": "22"
+    },
+    {
+      "key": "Dhanishta",
+      "value": "23"
+    },
+    {
+      "key": "Stabhishek",
+      "value": "24"
+    },
+    {
+      "key": "Poorvabhadra",
+      "value": "25"
+    },
+    {
+      "key": "Uthirabhadra",
+      "value": "26"
+    },
+    {
+      "key": "Revathi",
+      "value": "27"
+    }
+  ],
+  "RELIGION": [
+    {
+      "key": "Hindu",
+      "value": "1"
+    },
+    {
+      "key": "Muslim - Shia",
+      "value": "2"
+    },
+    {
+      "key": "Muslim - Sunni",
+      "value": "3"
+    },
+    {
+      "key": "Muslim - Others",
+      "value": "4"
+    },
+    {
+      "key": "Christian",
+      "value": "5"
+    },
+    {
+      "key": "Sikh",
+      "value": "6"
+    },
+    {
+      "key": "Jain - Digambar",
+      "value": "7"
+    },
+    {
+      "key": "Jain - Shwetambar",
+      "value": "7"
+    },
+    {
+      "key": "Jain - Others",
+      "value": "8"
+    },
+    {
+      "key": "Parsi",
+      "value": "9"
+    },
+    {
+      "key": "Buddhist",
+      "value": "10"
+    },
+    {
+      "key": "Jewish",
+      "value": "11"
+    },
+    {
+      "key": "Inter-Religion",
+      "value": "12"
+    }
+  ],
+  "MARITAL_STATUS": [
+    {
+      "key": "Never Married",
+      "value": "1"
+    },
+    {
+      "key": "Widowed",
+      "value": "2"
+    },
+    {
+      "key": "Divorced",
+      "value": "3"
+    },
+    {
+      "key": "Awaiting Divorce",
+      "value": "4"
+    }
+  ],
+  "FAMILY_STATUS": [
+    {
+      "key": "Middle Class",
+      "value": "1"
+    },
+    {
+      "key": "Upper Middle Class",
+      "value": "2"
+    },
+    {
+      "key": "Rich",
+      "value": "3"
+    },
+    {
+      "key": "Affluent",
+      "value": "4"
+    }
+  ],
+  "FAMILY_TYPE": [
+    {
+      "key": "Joint",
+      "value": "1"
+    },
+    {
+      "key": "Nuclear",
+      "value": "2"
+    }
+  ],
+  "FAMILY_VALUES": [
+    {
+      "key": "Orthodox",
+      "value": "1"
+    },
+    {
+      "key": "Traditional",
+      "value": "2"
+    },
+    {
+      "key": "Moderate",
+      "value": "3"
+    },
+    {
+      "key": "Liberal",
+      "value": "4"
+    }
+  ]
+}

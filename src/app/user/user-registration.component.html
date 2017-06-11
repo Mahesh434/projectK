@@ -1,0 +1,156 @@
+<form>
+    <!--First Name-->
+    <div class="form-group">
+        <label for="ur-firstname">First Name:</label>
+        <input class="form-control" id="ur-firstname" name="ur-firstname" [(ngModel)]="userDetails.firstname">
+    </div>
+
+    <!--Last Name-->
+    <div class="form-group">
+        <label for="ur-lastname">Last Name:</label>
+        <input class="form-control" id="ur-lastname" name="ur-lastname" [(ngModel)]="userDetails.lastname">
+    </div>
+
+    <!--Gender-->
+    <div class="form-group">
+        <label for="ur-gender">Gender:</label>
+        <input class="form-control" id="ur-gender" name="ur-gender" [(ngModel)]="userDetails.gender">
+    </div>
+
+    <!--Email-->
+    <div class="form-group">
+        <label for="ur-email">Email:</label>
+        <input class="form-control" id="ur-email" name="ur-email" [(ngModel)]="userDetails.email">
+    </div>
+
+    <!--DOB-->
+    <div class="form-group">
+        <label for="ur-dob">DOB:</label>
+        <input class="form-control" id="ur-dob" placeholder="mm/dd/yyyy" name="ur-dob" [(ngModel)]="userDetails.dob">
+    </div>
+
+    <!--Height Component-->
+    <pk-height (heigtChanged)="setHeight($event)"></pk-height>
+
+    <!--Complexion-->
+    <div class="form-group">
+        <label for="ur-complexion">Complexion:</label>
+        <input class="form-control" id="ur-complexion" name="ur-complexion" [(ngModel)]="userDetails.complexion">
+    </div>
+
+    <!--Education-->
+    <div class="form-group">
+        <label for="ur-education">Education:</label>
+        <input class="form-control" id="ur-education" name="ur-education" [(ngModel)]="userDetails.education">
+    </div>
+
+    <!--Occupation-->
+    <div class="form-group">
+        <label for="ur-occupation">Occupation:</label>
+        <input class="form-control" id="ur-occupation" name="ur-occupation" [(ngModel)]="userDetails.occupation">
+    </div>
+
+    <!--Marital Status-->
+    <div class="form-group">
+        <label for="ur-maritalstatus">Marital Status:</label>        
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            <span *ngIf="!userDetails.maritalstatus">--Select--</span>
+            {{userDetails.maritalstatus}}
+            <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li *ngFor="let maritalstatus of userPrefs.MARITAL_STATUS"><a (click)="setDDL(maritalstatus, 'maritalstatus')">{{maritalstatus.key}}</a></li>
+                </ul>
+        </div>
+    </div>
+
+    <!--Paternal Gotram-->
+    <div class="form-group">
+        <label for="ur-paternalGotram">Paternal Gotram:</label>
+        <input class="form-control" id="ur-paternalGotram" name="ur-paternalGotram" [(ngModel)]="userDetails.paternalGotram">
+    </div>
+
+    <!--Maternal Gotram-->
+    <div class="form-group">
+        <label for="ur-maternalGotram">Maternal Gotram:</label>
+        <input class="form-control" id="ur-maternalGotram" name="ur-maternalGotram" [(ngModel)]="userDetails.maternalGotram">
+    </div>
+
+    <!--Star-->
+    <div class="form-group">
+        <label for="ur-star">Star:</label>        
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            <span *ngIf="!userDetails.star">--Select--</span>
+            {{userDetails.star}}
+            <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li *ngFor="let star of userPrefs.STAR"><a (click)="setDDL(star, 'star')">{{star.key}}</a></li>
+                </ul>
+        </div>
+    </div>
+
+    <!--Rasi-->
+    <div class="form-group">
+        <label for="ur-rasi">Rasi:</label>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            <span *ngIf="!userDetails.rasi">--Select--</span>
+            {{userDetails.rasi}}
+            <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li *ngFor="let rasi of userPrefs.RASI"><a (click)="setDDL(rasi, 'rasi')">{{rasi.key}}</a></li>
+                </ul>
+        </div>
+    </div>
+
+    <!--Abour Self-->
+    <div class="form-group">
+        <label for="ur-aboutSelf">About Self:</label>
+        <textarea class="form-control" rows="5" id="ur-aboutSelf" name="ur-aboutSelf" [(ngModel)]="userDetails.aboutSelf"></textarea>
+    </div>
+
+    <!--Salary Component-->
+    <!--<pk-salary (salaryChanged)="setSalary($event)"></pk-salary>    -->
+    <div class="form-group">
+        <label for="ur-salary">Salary:</label>
+        <input class="form-control" id="ur-salary" name="ur-salary" [(ngModel)]="userDetails.salary">
+    </div>
+
+    <!--Mobile-->
+    <div class="form-group">
+        <label for="ur-mobileno">Mobile :</label>
+        <input class="form-control" id="ur-mobileno" name="ur-mobileno" [(ngModel)]="userDetails.mobileno">
+    </div>
+
+    <!--Address-->
+    <div class="form-group">
+        <label for="ur-address">Address:</label>
+        <textarea class="form-control" rows="5" id="ur-address" name="ur-address" [(ngModel)]="userDetails.address"></textarea>
+    </div>
+
+    <!--Longitude-->
+    <div class="form-group">
+        <label for="ur-longitude">Longitude:</label>
+        <input class="form-control" id="ur-longitude" name="ur-longitude" [(ngModel)]="userDetails.longitude">
+    </div>
+
+    <!--Latitude-->
+    <div class="form-group">
+        <label for="ur-latitude">Latitude:</label>
+        <input class="form-control" id="ur-latitude" name="ur-latitude" [(ngModel)]="userDetails.latitude">
+    </div>
+
+    <!--Photo-->
+    <div class="form-group">
+        <label for="ur-photoLink">Photo:</label>
+        <input class="form-control" id="ur-photoLink" name="ur-photoLink" [(ngModel)]="userDetails.photoLink">
+    </div>
+
+    <!--Video-->
+    <div class="form-group">
+        <label for="ur-videoLink">Video:</label>
+        <input class="form-control" id="ur-videoLink" name="ur-videoLink" [(ngModel)]="userDetails.videoLink">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="registerUser()">Submit</button>
+</form>
